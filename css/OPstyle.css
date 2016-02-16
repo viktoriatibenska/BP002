@@ -1,0 +1,14 @@
+@CHARSET "UTF-8";
+
+.OPwrapper {
+	background-color: red;
+	stroke: black;
+	stroke-width: 15;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	cursor: move;
+	/*visibility: hidden; */
+	padding: 5px;
+	width: 210;
+	height: 110;
+}
