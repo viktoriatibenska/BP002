@@ -17,9 +17,9 @@ class View
 
     public function output() {
 
-    	$call = $this->controller->change();
+    	$this->controller->clicked();
     	
-    	return "<p>" . $call . "</p>";
+    	return "<p>" . $this->model->string . "</p>";
     	
         //return "<p>" . $this->model->string . "</p>";
 
