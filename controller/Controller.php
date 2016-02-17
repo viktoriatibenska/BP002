@@ -15,4 +15,8 @@ class Controller
     public function clicked() {
         $this->model->string = 'Updated Data!';
     }
+    
+    public function change(){
+    	return 'Call successful.';
+    }
 }

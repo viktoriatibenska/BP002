@@ -17,7 +17,11 @@ class View
 
     public function output() {
 
-        return "<p>" . $this->model->string . "</p>";
+    	$call = $this->controller->change();
+    	
+    	return "<p>" . $call . "</p>";
+    	
+        //return "<p>" . $this->model->string . "</p>";
 
         //return '<p><a href="View.php?action=clicked"' . $this->model->string . "</a></p>";
     }
