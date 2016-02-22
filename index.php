@@ -11,7 +11,7 @@
 
 </head>
 <body>
-	<a href="statetest.html">State adding test</a>
+	<a href="js/statetest.html">State adding test</a>
 	
 	<h1>MVC test</h1>
 	
