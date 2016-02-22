@@ -113,7 +113,7 @@
 					},
 					'.state-connector': {
 			            //"xlink:href": "http://uxrepo.com/static/icon-sets/ionicons/svg/ios7-arrow-thin-right.svg"
-						"xlink:href": "arrow.svg"
+						"xlink:href": "../arrow.svg"
 					}
 				}
 			}));
@@ -151,7 +151,7 @@
 					},
 					'.state-connector': {
 			            //"xlink:href": "http://uxrepo.com/static/icon-sets/ionicons/svg/ios7-arrow-thin-right.svg"
-						"xlink:href": "arrow.svg"
+						"xlink:href": "../arrow.svg"
 					}
 				}
 			});
@@ -202,10 +202,10 @@
 		*/
 		$(document).on('mouseenter', '.uml-state-body', function() {
 			//change color when mouse enter
-			/*$(this).attr({
+			$(this).attr({
 				fill : 'rgba(153, 0, 0, 0.1)',
 				stroke : 'rgba(153, 0, 0, 0.5)'
-			});*/
+			});
 			
 			//show the wrapper when entered
 			$(this).prev().attr({
@@ -213,10 +213,10 @@
 			});
 		}).on('mouseleave', '.uml-state-body', function() {
 			//change color to original when mouse leave
-			/*$(this).attr({
+			$(this).attr({
 				fill : 'rgba(48, 208, 198, 0.1)',
 				stroke : 'rgba(48, 208, 198, 0.5)'
-			});*/
+			});
 		}).on('mouseleave', '.wrapped', function() {
 			$(this).attr({
 				'visibility': 'hidden'
