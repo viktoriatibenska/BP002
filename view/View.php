@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 
+<input type="submit" class="button" name="insert" value="insert" />
 
 <?php
 class View

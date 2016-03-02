@@ -11,8 +11,13 @@ class Pattern
 	private $id;
 	private $name;
 	private $description;
+	private $context;
+	private $problems;
+	private $consequences;
+	private $solution;
 	private $states = array();
-
+	
+	
 	public function getId(){
 		return $this->id;
 	}
@@ -27,6 +32,38 @@ class Pattern
 	
 	public function setName($string){
 		$this->name = $string;
+	}
+	
+	public function getContext(){
+		return $this->context;
+	}
+	
+	public function setContext($string){
+		$this->context = $string;
+	}
+	
+	public function getProblems(){
+		return $this->problems;
+	}
+	
+	public function setProblems($string){
+		$this->problems = $string;
+	}
+	
+	public function getConsequences(){
+		return $this->consequences;
+	}
+	
+	public function setConsequences($string){
+		$this->consequences = $string;
+	}
+	
+	public function getSolution(){
+		return $this->solution;
+	}
+	
+	public function setSolution($string){
+		$this->solution = $string;
 	}
 	
 	public function getDescription(){

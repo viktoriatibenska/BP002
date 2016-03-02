@@ -3,13 +3,15 @@
 /**
  * @param id identification number
  * @param description string describing an option which activates transition
+ * @param summary is a short description of transition 
  * @param dstState state to which transition points
  * @param srcState state from which transition started
  * */
-class Transition
+class Connector
 {
 	private $id;
 	private $description;
+	private $summary;
 	private $dstState;
 	private $srcState;
 
@@ -27,6 +29,14 @@ class Transition
 
 	public function setDescription($string){
 		$this->description = $string;
+	}
+	
+	public function getSummary(){
+		return $this->summary;
+	}
+	
+	public function setSummary($string){
+		$this->summary = $string;
 	}
 	
 	public function getDstState(){

@@ -2,17 +2,18 @@
 
 /**
  * @param id identification number
- * @param scenario string describing scenario of current state
+ * @param description string describing scenario of current state
+ * @param summary is a short description of scenario
  * @param transitions array of transitions from current state
  * @param pattern object of parent pattern state belongs to
  * */
 class State
 {
 	private $id;
-	private $scenario;
+	private $description;
+	private $summary;
 	private $transitions = array();
 	private $pattern;
-	//private $srcTransition;
 	
 	public function getId(){
 		return $this->id;
@@ -22,12 +23,20 @@ class State
 		$this->id = $id;
 	}
 	
-	public function getScenario(){
-		return $this->scenario;
+	public function getDescription(){
+		return $this->description;
 	}
 	
-	public function setScenario($string){
-		$this->scenario = $string;
+	public function setDescription($string){
+		$this->description = $string;
+	}
+	
+	public function getSummary(){
+		return $this->summary;
+	}
+	
+	public function setSummary($string){
+		$this->summary = $string;
 	}
 	
 	public function getTransitions(){
@@ -45,12 +54,4 @@ class State
 	public function setPattern(Pattern $pattern){
 		$this->pattern = $pattern;
 	}
-	
-	/*public function getSrcTransition(){
-		return $this->srcTransition;
-	}
-	
-	public function setSrcTransition(Transition $transition){
-		$this->srcTransition = $transition;
-	}*/
 }
