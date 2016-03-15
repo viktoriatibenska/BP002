@@ -17,6 +17,15 @@ class Pattern
 	private $solution;
 	private $states = array();
 	
+	public function __construct($id = NULL, $name = NULL, $description = NULL, $context = NULL, $problems = NULL, $consequences = NULL, $solution = NULL){
+		$this->id = $id;
+		$this->name = $name;
+		$this->description = $description;
+		$this->context = $context;
+		$this->problems = $problems;
+		$this->consequences = $consequences;
+		$this->solution = $solution;
+	}
 	
 	public function getId(){
 		return $this->id;

@@ -11,6 +11,10 @@ class Controller
     public function __construct($model){
         $this->model = $model;
     }
+    
+    public function update(){
+    	
+    }
 
     public function clicked() {
         $this->model->string = 'Updated Data!';

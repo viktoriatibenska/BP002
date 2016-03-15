@@ -9,12 +9,20 @@
  * */
 class Connector
 {
-	private $id;
+	private  $id;
 	private $description;
 	private $summary;
 	private $dstState;
 	private $srcState;
 
+	public function __construct($id = NULL, $description = NULL, $summary = NULL, $dstState = NULL,$srcState = NULL) {
+		$this->id = $id;
+		$this->description = $description;
+		$this->summary = $summary;
+		$this->dstState = $dstState;
+		$this->srcState = $srcState;
+	}
+	
 	public function getId(){
 		return $this->id;
 	}

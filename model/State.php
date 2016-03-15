@@ -15,6 +15,13 @@ class State
 	private $transitions = array();
 	private $pattern;
 	
+	public function __construct($id = NULL, $description = NULL, $summary = NULL, $pattern = NULL){
+		$this->id = $id;
+		$this->description = $description;
+		$this->summary = $summary;
+		$this->pattern = $pattern;
+	}
+	
 	public function getId(){
 		return $this->id;
 	}
